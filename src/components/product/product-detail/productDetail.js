@@ -9,8 +9,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   const { cartItems, setCartItems } = useContext(MyContext);
   const [product, setProduct] = useState([]);
-  const notify = () => toast("Product added to the cart");
 
+  const notify = () => toast("Product added to the cart");
 
   const rate = product?.rating?.rate;
   const count = product?.rating?.count;
@@ -39,22 +39,14 @@ const ProductDetail = () => {
     getProduct();
   }, []);
 
-
-
-
   // const toastElList = document.querySelectorAll('.toast')
   // const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
 
-
-
   return (
     <div className="container">
-
-{/* <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> */}
-
-<ToastContainer/>
-
+      {/* <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> */}
       <div className="container-xl prod-detail">
+        <ToastContainer />
         <div className="row">
           <div className="col-xl-6">
             <div className="prod-img">
@@ -107,7 +99,6 @@ const ProductDetail = () => {
         </div>
       </div>
     </div>
-
   );
 };
 

@@ -20,17 +20,27 @@ const ProductCard = (props) => {
           <h5 className="card-title">{product.title}</h5>
           <p className="card-text prod-price">${product.price}/-</p>
           <div className="rate">
-          <span className={`fa fa-star ${rate > 1 ? 'checked':'none'}`}></span>
-               <span className={`fa fa-star ${rate > 2 ? 'checked':'none'}`}></span>
-              <span className={`fa fa-star ${rate > 3 ? 'checked':'none'}`}></span>
-              <span className={`fa fa-star ${rate > 4 ? 'checked':'none'}`}></span>
-               <span className={`fa fa-star ${rate > 5 ? 'checked':'none'}`}></span>
+            <span
+              className={`fa fa-star ${rate > 1 ? "checked" : "none"}`}
+            ></span>
+            <span
+              className={`fa fa-star ${rate > 2 ? "checked" : "none"}`}
+            ></span>
+            <span
+              className={`fa fa-star ${rate > 3 ? "checked" : "none"}`}
+            ></span>
+            <span
+              className={`fa fa-star ${rate > 4 ? "checked" : "none"}`}
+            ></span>
+            <span
+              className={`fa fa-star ${rate > 5 ? "checked" : "none"}`}
+            ></span>
             <span className="text-muted">({product.rating.rate})</span>
           </div>
           <Link to={`/product/${product.id}`}>
-          <a type="button" className="btn btn-success buy-btn shadow-0 me-1">
-            Buy now
-          </a>
+            <a type="button" className="btn btn-success buy-btn shadow-0 me-1">
+              Buy now
+            </a>
           </Link>
         </div>
       </div>

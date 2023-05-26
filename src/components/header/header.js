@@ -13,7 +13,7 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <a className="nav-link btn btn-success login-btn p-3">
+            <a className="nav-link btn btn-success login-btn-header p-3">
               <Link to={"/login"}>LOGIN</Link>
             </a>
           </div>

@@ -1,9 +1,8 @@
 import React from "react";
 import "./side-nav.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const SideNav = () => {
   return (
@@ -38,7 +37,9 @@ const SideNav = () => {
           </a>
           <a className="list-group-item py-2">
             <i className="	fa fa-plus fa-fw me-3"></i>
-            <span><Link to={"/add-product"}>ADD PRODUCT</Link></span>
+            <span>
+              <Link to={"/add-product"}>ADD PRODUCT</Link>
+            </span>
           </a>
           <a className="list-group-item py-2">
             <i className="fa fa-address-book fa-fw me-3"></i>

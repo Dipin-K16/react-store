@@ -6,14 +6,12 @@ import "./product.css";
 const Product = () => {
   const [products, setProducts] = useState([]);
 
+
   useEffect(() => {
     getProducts();
   }, []);
 
-  // useEffect(() => {
-  //   console.log("products", products);
-  // }, [products]);
-
+  
   const getProducts = async () => {
     try {
       const { data } = await axios.get("https://fakestoreapi.com/products");

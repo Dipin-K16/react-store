@@ -34,7 +34,7 @@ const Cart = () => {
         </a>
       </div>
       <div className="subtotal">
-        {subTotal==0 && (<div> No items in the cart </div>)}
+        {subTotal == 0 && <div> No items in the cart </div>}
       </div>
       <div className="row">
         {cartItems.map((product, index) => (
@@ -63,8 +63,7 @@ const Cart = () => {
             </div>
           </div>
         ))}
-      </div> 
-      
+      </div>
     </div>
   );
 };

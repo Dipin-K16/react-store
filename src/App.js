@@ -13,23 +13,24 @@ import NewDeals from "./components/new-deals/newDeals";
 import { useEffect, useState } from "react";
 import Cart from "./components/cart/cart";
 import AddProduct from "./components/add-product/addProduct";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-
-  const[cartItems,setCartItems]=useState([])
-  const[product,setProduct]=useState([])
-
-  useEffect(()=>{
-    console.log("cart item app.js",cartItems);
-  },[cartItems])
+  const [cartItems, setCartItems] = useState([]);
+  const [product, setProduct] = useState([]);
 
   
 
+  useEffect(() => {
+    console.log("cart item app.js", cartItems);
+  }, [cartItems]);
+
+
+
   return (
     <div className="app-container">
-      <MyContext.Provider value={{cartItems,setCartItems}}>
+      <MyContext.Provider value={{ cartItems, setCartItems }}>
         <BrowserRouter>
           <header>
             <Header />
@@ -41,11 +42,11 @@ function App() {
             <section className="body-section">
               <Routes>
                 <Route path="/" element={<Product />} />
-                <Route path="login" element={<Login/>}/>
-                <Route path="cart" element={<Cart/>}/>
-                <Route path="add-product" element={<AddProduct/>}/>
-                <Route path="new-deals" element={<NewDeals/>}/>
-                <Route path="product/:id" element={<ProductDetail/>}/>
+                <Route path="login" element={<Login />} />
+                <Route path="cart" element={<Cart />} />
+                <Route path="add-product" element={<AddProduct />} />
+                <Route path="new-deals" element={<NewDeals />} />
+                <Route path="product/:id" element={<ProductDetail />} />
               </Routes>
             </section>
           </section>
