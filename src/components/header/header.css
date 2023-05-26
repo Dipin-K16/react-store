@@ -1,0 +1,19 @@
+.navbar{
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.186);
+}
+
+header{
+    background-color:rgba(225, 225, 221, 0.593);
+    font-family: 'Times New Roman', Times, serif    
+}
+
+.login-btn{
+    color:white;
+    
+}
+
+.login-btn a{
+    text-decoration: none!important;
+    color:white!important;
+}

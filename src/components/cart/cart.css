@@ -1,0 +1,54 @@
+.row{
+    margin:0;
+}
+
+.card{
+    width:250px!important;
+}
+
+.card:hover{
+
+    border: 1px solid rgba(0, 0, 0, 0.538);
+    box-shadow: 5px 5px 5px 5px #888888;
+
+
+}
+
+.card-img-top{
+    width: 175px;
+    margin: auto;
+    padding-top: 10px;
+    object-fit: contain;
+}
+
+.card-title,.card-text{
+    font-size: small;
+    text-align: center;
+}
+
+.rate{
+    margin: auto;
+    padding-bottom: 6px ;
+  }
+
+  .subtotal h3{
+    margin: 0;
+  }
+  
+  .subtotal{
+    display: flex;
+    justify-content: center;
+    padding:30px 0px 0px 0px;
+  }
+
+  .subtotal-button{
+    margin-top: 1px!important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-cart-container{
+  display: flex;
+  flex-direction: column;
+
+  }
