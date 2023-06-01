@@ -18,6 +18,7 @@ a:hover {
 
 @media (max-width: 500px) {
     .sidebar {
-        display: none;
+        width: 90px;
+        font-size: smaller;
     }
 }

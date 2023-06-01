@@ -15,38 +15,45 @@ const SideNav = () => {
               <b>Main dashboard</b>
             </span>
           </a>
-
+          <Link to={"/"}>
           <a className="list-group-item py-2">
             <i className="fa fa-home me-3"></i>
             <span>
-              <Link to={"/"}>HOME </Link>{" "}
+              HOME 
             </span>
           </a>
-
-          <a className="list-group-item py-2">
+          </Link>
+          <Link to={"/new-deals"}> <a className="list-group-item py-2">
             <i className="fa fa-info-circle me-3"></i>
             <span>
-              <Link to={"/new-deals"}> NEW DEALS </Link>
+               NEW DEALS 
             </span>
           </a>
+          </Link>
+          <Link to={"/cart"}>
           <a className="list-group-item py-2">
             <i className="fa fa-cart-arrow-down me-3"></i>
             <span>
-              <Link to={"/cart"}>CART</Link>
+             CART
             </span>
           </a>
+          </Link>
+          <Link to={"/add-product"}>
           <a className="list-group-item py-2">
             <i className="	fa fa-plus fa-fw me-3"></i>
             <span>
-              <Link to={"/add-product"}>ADD PRODUCT</Link>
+             ADD PRODUCT
             </span>
           </a>
+          </Link>
+          <Link to={"/login"}>
           <a className="list-group-item py-2">
             <i className="fa fa-address-book fa-fw me-3"></i>
             <span>
-              <Link to={"/login"}> LOGIN</Link>
+              LOGIN
             </span>
           </a>
+          </Link>
           <a className="list-group-item py-2">
             <i className="fa fa-heart me-3"></i>
             <span>WISHLIST</span>

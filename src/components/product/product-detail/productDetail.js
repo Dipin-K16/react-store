@@ -36,7 +36,7 @@ const ProductDetail = () => {
   }, [cartItems]);
 
   useEffect(() => {
-    getProduct();
+    getProduct(); 
   }, []);
 
   // const toastElList = document.querySelectorAll('.toast')
@@ -101,5 +101,6 @@ const ProductDetail = () => {
     </div>
   );
 };
+
 
 export default ProductDetail;
