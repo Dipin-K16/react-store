@@ -10,23 +10,13 @@ import Product from "./components/product/product";
 import ProductDetail from "./components/product/product-detail/productDetail";
 import Login from "./components/login/login";
 import NewDeals from "./components/new-deals/newDeals";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Cart from "./components/cart/cart";
 import AddProduct from "./components/add-product/addProduct";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-  const [product, setProduct] = useState([]);
-
-  
-
-  useEffect(() => {
-    console.log("cart item app.js", cartItems);
-  }, [cartItems]);
-
-
 
   return (
     <div className="app-container">
